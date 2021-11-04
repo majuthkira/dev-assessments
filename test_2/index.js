@@ -16,6 +16,12 @@ module.exports = function test2() {
 
   // Write your code here.  The pre-written lines above and below are just suggestions, feel free to delete
   // them and start fresh.
+  const test_1 = require("../test_1/index.js");
+  const data = new test_1();
+  
+  results = data.filter(obj =>
+    obj.last_name =='Simpson'
+  );
 
   return results;
 };

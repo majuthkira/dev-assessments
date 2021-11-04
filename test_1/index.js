@@ -16,5 +16,11 @@ module.exports = function test1() {
   // Write your code here.  The pre-written lines above and below are just suggestions, feel free to delete
   // them and start fresh.
 
+  const data = require('./test_data.json');
+  for(var key in data){
+    data[key]['example'] = data[key]['first_name'] + " " + data[key]['last_name'] + " says " + data[key]['catchphrase'];
+  }
+
+  results = data;
   return results;
 };
